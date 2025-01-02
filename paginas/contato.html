@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Rede de Apoio</title>
+    <link rel="stylesheet" href="/styles/Contato.css">
+</head>
+<body>
+    <header>
+        <img src="/img/handshake.png">
+        <h1>Contato</h1>
+        <p>Entre em contato conosco para dúvidas, sugestões ou suporte</p>
+    </header>
+    <nav>
+        <a href="/index.html">Início</a>
+        <a href="/paginas/campanhas.html">Campanhas</a>
+        <a href="/paginas/InformacoesLegais.html">Informações Legais</a>
+        <a href="/paginas/comoDenunciar.html">Como Denunciar</a>
+        <a href="/paginas/contato.html">Contato</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Envie uma Mensagem</h2>
+            <form action="https://formsubmit.co/jessicacardosop1@gmail.com" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui" required></textarea>
+                
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/paginas/contato.html">
+                <button type="submit" >Enviar</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Informações de Contato</h2>
+            <div>
+                <strong>Telefone:</strong> <a href="tel:+551199999999">+55 11 99999-9999</a>
+            </div>
+            <div>
+                <strong>E-mail:</strong> <a href="mailto:contato@rededeapoio.com">contato@rededeapoio.com</a>
+            </div>
+            <div>
+                <strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo, SP, Brasil
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Rede de Apoio - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

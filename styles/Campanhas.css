@@ -1,0 +1,50 @@
+@import url(/style.css);
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+section h2 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+.campaign {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.campaign-item {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+.campaign-item:hover {
+    transform: translateY(-5px);
+}
+.campaign-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.campaign-item h3 {
+    padding: 10px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+.campaign-item p {
+    padding: 0 10px 10px;
+}
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
