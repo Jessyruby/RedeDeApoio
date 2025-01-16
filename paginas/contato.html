@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a Rede de Apoio para dúvidas, sugestões ou suporte. Envie sua mensagem ou consulte nossas informações de contato.">
     <title>Contato - Rede de Apoio</title>
     <link rel="stylesheet" href="/styles/Contato.css">
 </head>
@@ -24,16 +25,16 @@
             <h2>Envie uma Mensagem</h2>
             <form action="https://formsubmit.co/jessicacardosop1@gmail.com" method="post">
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" aria-label="Nome completo" required>
             
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail para contato" required>
             
                 <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
                 
                 <input type="hidden" name="_next" value="http://127.0.0.1:5501/paginas/contato.html">
-                <button type="submit" >Enviar</button>
+                <button type="submit" aria-label="Enviar mensagem">Enviar</button>
             </form>
         </section>
 
