@@ -42,5 +42,15 @@ button:hover {
     margin-top: 20px;
 }
 .contact-info div {
-    margin-bottom: 15px;
+    margin-bottom: 15px;   
+}
+
+.contact-info div a{
+    color: var(--primary-color);   
+}
+
+@media (max-width: 769px) {
+    .contact-info div {
+        font-size: 10pt;
+    }
 }

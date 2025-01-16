@@ -9,5 +9,5 @@ document.querySelector('form').addEventListener('submit', function(event) {
     } else {
         alert('Email enviado!');
     }
+    
 });
-

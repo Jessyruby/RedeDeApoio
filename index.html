@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rede de Apoio</title>
     <link rel="stylesheet" href="/styles/Inicio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
@@ -12,30 +13,71 @@
         <h1>Rede de Apoio</h1>
         <p>Unidos contra a violência doméstica</p>
     </header>
-    <nav>
-        <a href="/index.html">Início</a>
-        <a href="/paginas/campanhas.html">Campanhas</a>
-        <a href="/paginas/InformacoesLegais.html">Informações Legais</a>
-        <a href="/paginas/comoDenunciar.html">Como Denunciar</a>
-        <a href="/paginas/contato.html">Contato</a>
+    
+    <nav class="menu">
+        <li><a href="/index.html">Início</a></li>
+        <li><a href="/paginas/campanhas.html">Campanhas</a></li>
+        <li><a href="/paginas/InformacoesLegais.html">Informações Legais</a></li>
+        <li><a href="/paginas/comoDenunciar.html">Como Denunciar</a></li>
+        <li><a href="/paginas/contato.html">Contato</a></li>
     </nav>
+
+    <div class="list-menu">
+        <i class="bi bi-list list-menu-button"></i>
+    </div>
+
+    <div class="menu-mobile">
+
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/paginas/campanhas.html">Campanhas</a></li>
+                <li><a href="/paginas/InformacoesLegais.html">Informações Legais</a></li>
+                <li><a href="/paginas/comoDenunciar.html">Como Denunciar</a></li>
+                <li><a href="/paginas/contato.html">Contato</a></li>
+            </ul>  
+        </nav>
+        
+        <div class="btn-fechar">
+            <i class="bi bi-x-circle" id="close-circle"></i>
+            <i class="bi bi-x-circle-fill" id="close-circle-fill"></i>
+        </div>
+
+    </div>
+
     <main>
+
+        <h2>Bem-vindo à Rede de Apoio</h2>
+
         <section>
-            <h2>Bem-vindo à Rede de Apoio</h2>
+
             <div class="content">
-                <img src="https://images.unsplash.com/photo-1522543558187-768b6df7c25c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem representativa de apoio">
-                
-                <p>Nosso objetivo é fornecer suporte, informações e ferramentas para combater a violência doméstica. Trabalhamos juntos para promover conscientização e ajudar aqueles que precisam.</p>
+                <img src="https://images.unsplash.com/photo-1522543558187-768b6df7c25c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Campanhas de apoio">
+                <h3>Campanhas de Conscientização</h3>
+                <p>Descubra nossas iniciativas para promover a conscientização sobre a violência doméstica e como você pode participar.</p>
+                <a href="/paginas/campanhas.html" class="button">Saiba mais</a>
             </div>
+
             <div class="content">
-                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem de suporte">
-               
-                <p>Participe das nossas campanhas de sensibilização e faça parte da mudança. Juntos, podemos criar um ambiente mais seguro e acolhedor para todos.</p>
+                <img src="https://juristas.com.br/wp-content/uploads/2018/02/leis-do-brasil.jpg" alt="Informações legais">
+                <h3>Informações Legais</h3>
+                <p>Saiba mais sobre seus direitos e as leis que protegem contra a violência doméstica.</p>
+                <a href="/paginas/InformacoesLegais.html" class="button">Acesse as informações</a>
             </div>
+
+            <div class="content">
+                <img src="https://www.sspds.ce.gov.br/wp-content/uploads/sites/24/2022/10/Lei-Maria-da-Penha-saiba-como-denunciar-violencia-contra-a-mulher-no-Ceara-600x400.jpg" alt="Como denunciar">
+                <h3>Como Denunciar</h3>
+                <p>Aprenda como denunciar casos de violência doméstica e ajudar quem precisa.</p>
+                <a href="/paginas/comoDenunciar.html" class="button">Veja como denunciar</a>
+            </div>
+
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Rede de Apoio - Todos os direitos reservados.</p>
     </footer>
+
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

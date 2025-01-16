@@ -1,5 +1,12 @@
 @import url(/style.css);
 
+h2 {
+    flex-basis: 100%;
+    margin: 15px 0px;
+    color: var(--primary-color);
+    font-size: 20pt;
+}
+
 section {
     background-color: white;
     border-radius: 8px;
@@ -7,25 +14,43 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 40px;
 }
-section h2 {
-    flex-basis: 100%;
-    margin-bottom: 10px;
-    color: var(--primary-color);
-    font-size: 20pt;
-}
-.content {
-    flex: 1 1 45%;
-}
+
 .content img {
-    max-width: 90%;
     border-radius: 20px;
+    max-width: 100%;
 }
+
 .content p {
     margin-top: 10px;
     font-size: 10pt;
-    width: 500px;
     text-align: justify;
+}
+
+@media (min-width: 769px) {
+
+    .content {
+        width: 34%;
+    }
+}
+
+@media (max-width: 769px) {
+
+    h2 {
+        text-align: center;
+    }
+
+    section {
+        align-items: center;
+    }
+
+    .content p {
+        font-size: 8pt;
+    }
+
+    .content {
+        width: 90%;
+    }
 }
