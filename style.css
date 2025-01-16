@@ -149,7 +149,7 @@ main {
     margin: 0 auto;
 }
 
-.content a, .info-item a {
+.content a, .info-item a, .campaign-item a {
     display: inline-block;
     margin-top: 10px;
     background: #ffffff00;
@@ -163,7 +163,7 @@ main {
     transition: 330ms;
 } 
 
-.content a:hover, .info-item a:hover {
+.content a:hover, .info-item a:hover, .campaign-item a:hover {
     background: var(--button-color);
     color: #fff;
 } 
