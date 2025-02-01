@@ -2,15 +2,14 @@
 
 h2 {
     flex-basis: 100%;
-    margin: 15px 0px;
+    margin: 25px 0px 10px 0px;
     color: var(--primary-color);
-    font-size: 20pt;
+    font-size: 19pt;
+    font-weight: 300;
 }
 
 section {
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -18,15 +17,36 @@ section {
     gap: 40px;
 }
 
-.content img {
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #892ccc26;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.06) 0px 0px 0px 1px;
+    margin: 10px;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.content img {
     max-width: 100%;
 }
 
+.content h3{
+    text-align: center;
+    margin-top: 24px;
+}
+
 .content p {
-    margin-top: 10px;
-    font-size: 10pt;
+    width: 220px;
+    height: 30px;
+    margin: 10px 0px 50px 0px;
+    font-size: 9pt;
     text-align: justify;
+}
+
+.content .button {
+    margin-bottom: 20px;
 }
 
 @media (min-width: 769px) {

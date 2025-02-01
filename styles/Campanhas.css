@@ -7,10 +7,15 @@ section {
     padding: 20px;
     margin-bottom: 20px;
 }
-section h2 {
-    margin-bottom: 10px;
+
+h2 {
+    flex-basis: 100%;
+    margin: 25px 0px 10px 0px;
     color: var(--primary-color);
+    font-size: 19pt;
+    font-weight: 300;
 }
+
 .campaign {
     display: flex;
     flex-wrap: wrap;
@@ -18,15 +23,19 @@ section h2 {
     margin-top: 20px;
 }
 .campaign-item {
-    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 230px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 20px;
     overflow: hidden;
     background-color: #fff;
     transition: transform 0.3s;
+    margin: 10px 23px;
 }
 .campaign-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
 }
 .campaign-item img {
     width: 100%;
@@ -36,11 +45,19 @@ section h2 {
 .campaign-item h3 {
     padding: 10px;
     color: var(--secondary-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .campaign-item p {
     padding: 0 10px 10px;
+    font-size: 9pt;
+    width: 260px;
+    text-align: center;
 }
+
+.campaign-item a {
+    margin-bottom: 14px;
+}
+
 footer {
     background-color: var(--secondary-color);
     color: white;

@@ -1,48 +1,80 @@
 @import url(/style.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
+    width: 60%;
 }
-section h2 {
-    margin-bottom: 10px;
-    color: var(--primary-color);
+
+h2 {
+    flex-basis: 100%;
+    margin: 25px 0px 10px 0px;
+    color: var(--secondary-color);
+    font-size: 19pt;
+    font-weight: 300;
+    text-align: center;
 }
+
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 label {
-    font-weight: bold;
+    font-size: 10pt;
+    margin-left: 40px;
+    margin-top: 20px;
 }
+
 input, textarea, button {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 1rem;
 }
+
 button {
-    background-color: var(--button-color);
-    color: white;
+    border: 2px solid var(--primary-color);
+    background: white;
+    color: var(--primary-color);
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 200px;
+    width: 140px;
     margin-left: auto;
     border-radius: 20px;
 }
+
 button:hover {
-    background-color: var(--button-hover-color);
+    background-color: var(--primary-color);
+    color: #fff;
 }
+
 .contact-info {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .contact-info div {
-    margin-bottom: 15px;   
+    margin-bottom: 15px; 
+    font-size: 10pt;
+
 }
 
 .contact-info div a{
@@ -50,6 +82,10 @@ button:hover {
 }
 
 @media (max-width: 769px) {
+    section {
+        width: 92%;
+    }
+
     .contact-info div {
         font-size: 10pt;
     }

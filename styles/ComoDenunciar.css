@@ -7,10 +7,15 @@ section {
     padding: 20px;
     margin-bottom: 20px;
 }
-section h2 {
-    margin-bottom: 10px;
+
+h2 {
+    flex-basis: 100%;
+    margin: 25px 0px 10px 0px;
     color: var(--primary-color);
+    font-size: 19pt;
+    font-weight: 300;
 }
+
 .report-info {
     display: flex;
     flex-wrap: wrap;
@@ -18,9 +23,13 @@ section h2 {
     margin-top: 20px;
 }
 .info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 1 1 300px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 20px;
+    margin: 0px 15px;
     overflow: hidden;
     background-color: #fff;
     padding: 15px;
@@ -33,6 +42,7 @@ section h2 {
 }
 .info-item p {
     margin-bottom: 10px;
+    font-size: 9pt;
 }
 .info-item img {
     width: 100%; 
